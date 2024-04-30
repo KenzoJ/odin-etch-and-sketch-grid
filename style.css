@@ -1,21 +1,30 @@
 .grid {
     display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    height: 500px;
 
   }
-  .grid-item {
-    width: 10px;
-    height: 10px;
+  .grid-item, .selected-grid-item{
+    flex-grow: 1;
+    flex-basis: 10px;
+    height: 80px;
     background-color: hsl(0, 0%, 88%);
-    padding: 10px;
-    border: 5px solid white;
   }
   .selected-grid-item {
-    width: 10px;
-    height: 10px;
     background-color: blue;
-    padding: 10px;
-    border: 5px solid white;
   }
+.buttons {
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    padding: 30px;
+}
+#reset {
+    justify-self: center;
+}
 
-
+.column {
+    flex-basis: 100px;
+}
   
